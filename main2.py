@@ -8,7 +8,7 @@ import requests
 import json
 
 api_key = ""
-wapi_key = '9bfe52920d89fabc6001e7fdeda7c9a8'
+wapi_key = ''
 content = ""
 
 
@@ -58,7 +58,7 @@ def get_weather():
 def openAI(query):
     try:
         client = OpenAI(api_key=api_key)
-        content = f"Sam: {query}\n Charli(an AI assistant): "
+        content = f"Sam: {query}\n Jarvis(an AI assistant): "
 
         response = client.chat.completions.create(
             model="gpt-3.5-turbo-16k",
